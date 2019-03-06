@@ -4,12 +4,8 @@
 ## Installation
 You can install the package via composer:
 ```php
-composer require archerzdip/laravel-identity
-```
-or
-```php
 // composer.json
-"archerzdip/laravel-identityr":"dev-master"
+"archerzdip/laravel-identity":"dev-master"
 // composer update
 composer update
 ```
