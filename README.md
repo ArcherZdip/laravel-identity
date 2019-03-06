@@ -4,12 +4,12 @@
 ## Installation
 You can install the package via composer:
 ```php
-composer require archerzdip/laravel-chinese-idnumber
+composer require archerzdip/laravel-identity
 ```
 or
 ```php
 // composer.json
-"archerzdip/laravel-chinese-idnumber":"dev-master"
+"archerzdip/laravel-identityr":"dev-master"
 // composer update
 composer update
 ```
@@ -23,10 +23,12 @@ By running
 
 // Get one id number value
 identity();
+
 app('identity_faker')->one();
 
 // Get multiple id number value
 identity(10);
+
 app('identity_faker')->limit(10)->get();
 
 // 可以设置省份、性别、生日来获取特定身份证号码
@@ -45,9 +47,7 @@ ArcherZdip\Identity\VerityChineseIDNumber::isValid($idNumer);
 
 ## Console
 It is also possible to get id number within the console:
-```php
-php artisan identity:set
-
+```
 $ php artisan identity:get --help                   
 Usage:
   identity:get [options]
@@ -63,9 +63,7 @@ Options:
 
 
 And it is also possible to verity id number within the console:
-```php
-php artisan identity:verity {idnumer}
-
+```
 $ php artisan identity:verity --help            
 Usage:
   identity:verity <idnumber>
