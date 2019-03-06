@@ -1,0 +1,31 @@
+{
+    "name": "zhanglingyu/laravel-chinese-idnumber",
+    "description": "Chinese ID number generate and verity.",
+    "authors": [
+        {
+            "name": "archerZdip",
+            "email": "646121218@qq.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "ArcherZdip\\Identity\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.6"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ArcherZdip\\Identity\\IdentityServiceProvider"
+            ],
+            "aliases": {
+                "Identity": "ArcherZdip\\Identity\\IdentityFacade"
+            }
+        }
+    }
+}
