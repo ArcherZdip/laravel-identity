@@ -1,6 +1,14 @@
 {
-    "name": "zhanglingyu/laravel-chinese-idnumber",
+    "name": "zhanglingyu/laravel-identity",
     "description": "Chinese ID number generate and verity.",
+    "keywords":
+    [
+        "chinese id number",
+        "laravel",
+        "identity",
+        "verity",
+        "identity card"
+    ],
     "authors": [
         {
             "name": "archerZdip",
