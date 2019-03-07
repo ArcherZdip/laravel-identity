@@ -36,9 +36,36 @@ app('identity_faker')->province('北京市')->sex('男')->birth('2018-02-09')->o
 **可以使用`identity_verity()`来验证身份号码的有效性:**
 
 ```php
-identity_verity(123456);  // false
+$bool = identity_verity(123456);  // false
 // or
-ArcherZdip\Identity\VerityChineseIDNumber::isValid($idNumer);
+use ArcherZdip\Identity\VerityChineseIDNumber;
+
+$bool = VerityChineseIDNumber::isValid(string $idNumber);
+```
+
+**其他功能：**
+```php
+use ArcherZdip\Identity\VerityChineseIDNumber;
+// 获取生日
+$birthday = (new VerityChinsesIDNumber(string $idNumber))->getBirthday()->format('Y-m-d');
+
+// 获取年龄
+$age = (new VerityChinsesIDNumber(string $idNumber))->getAge();
+
+// 是否为男性
+$isMale = (new VerityChinsesIDNumber(string $idNumber))->isMale();
+
+// 是否为女性
+$isFemale = (new VerityChinsesIDNumber(string $idNumber))->isFemale();
+
+// 获取年份
+$year = (new VerityChinsesIDNumber(string $idNumber))->getYear()
+
+// 获取月份
+$month = (new VerityChinsesIDNumber(string $idNumber))->getmonth()
+
+// 获取日期
+$day = (new VerityChinsesIDNumber(string $idNumber))->getday()
 ```
 
 ## Console
@@ -68,3 +95,7 @@ Arguments:
   idnumber              Chinese ID number string
 
 ```
+
+
+## 后续
+身份证号码中携带附加信息，如地区信息、生日、性别等。
