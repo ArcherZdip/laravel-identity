@@ -2,7 +2,7 @@
 **生成和验证中国居民身份证号码**
 
 ## Installation
-You can install the package via composer:
+通过在composer.json中配置安装：
 ```php
 // composer.json
 "archerzdip/laravel-identity":"dev-master"
@@ -42,7 +42,7 @@ ArcherZdip\Identity\VerityChineseIDNumber::isValid($idNumer);
 ```
 
 ## Console
-It is also possible to get id number within the console:
+可以使用console来获取一个或者多个ID：
 ```
 $ php artisan identity:get --help                   
 Usage:
@@ -58,7 +58,7 @@ Options:
 可以使用-l 指定获取条数，-P 指定省份，-S 指定性别，-B 指定生日
 
 
-And it is also possible to verity id number within the console:
+也可以使用console来验证ID是否有效：
 ```
 $ php artisan identity:verity --help            
 Usage:
