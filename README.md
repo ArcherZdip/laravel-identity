@@ -4,6 +4,10 @@
 ## Installation
 通过在composer.json中配置安装：
 ```php
+composer require archerzdip/laravel-identity:dev-master
+```
+or
+```php
 // composer.json
 "archerzdip/laravel-identity":"dev-master"
 // composer update
