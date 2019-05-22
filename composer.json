@@ -1,6 +1,7 @@
 {
     "name": "archerzdip/laravel-identity",
     "description": "Chinese ID number generate and verity.",
+    "license": "MIT",
     "keywords":
     [
         "chinese id number",

@@ -5,6 +5,7 @@
  * Date: 2019-03-06
  * Time: 11:01
  */
+
 namespace ArcherZdip\Identity;
 
 use Tests\TestCase;
