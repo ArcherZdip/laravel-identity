@@ -1,4 +1,5 @@
 # Laravel-Chinese-IDNumber
+
 **生成和验证中国居民身份证号码**
 
 ## Installation
