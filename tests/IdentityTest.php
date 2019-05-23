@@ -12,8 +12,6 @@ use Tests\TestCase;
 
 class IdentityTest extends TestCase
 {
-
-
     /** @test */
     public function testOne()
     {
