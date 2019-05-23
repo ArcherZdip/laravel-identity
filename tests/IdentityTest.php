@@ -8,14 +8,21 @@
 
 namespace ArcherZdip\Identity;
 
-use Tests\TestCase;
+use PHPUnit\Framework\TestCase;
 
 class IdentityTest extends TestCase
 {
+    public $identity = null;
+
+    public function setUp()
+    {
+        $this->identity = new IdentityService();
+    }
+
     /** @test */
     public function testOne()
     {
-        $id = app('identity_faker')->sex('男')->province()->birth('2018-01-02')->one();
+        $id = $this->identity->sex('男')->province()->birth('2018-01-02')->one();
 
         $this->assertTrue(VerityChineseIDNumber::isValid($id));
     }
@@ -23,7 +30,7 @@ class IdentityTest extends TestCase
     /** @test */
     public function testGet()
     {
-        $ids = app('identity_faker')->birth('2018-12-12')->limit(10)->get();
+        $ids = $this->identity->birth('2018-12-12')->limit(10)->get();
 
         $this->assertEquals(10, count($ids));
 
@@ -38,7 +45,7 @@ class IdentityTest extends TestCase
         $id1 = '123456';
         $this->assertFalse(identity_verity($id1));
 
-        $id2 = identity();
+        $id2 = $this->identity->one();
         $this->assertTrue(identity_verity($id2));
     }
 }
