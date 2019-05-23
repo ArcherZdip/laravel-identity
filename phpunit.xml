@@ -13,4 +13,16 @@
             <directory suffix="Test.php">tests</directory>
         </testsuite>
     </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">src/</directory>
+            <exclude>
+                <directory suffix="ServiceProvider.php">src/</directory>
+                <directory suffix="Facade.php">src/</directory>
+                <directory suffix="helpers.php">src/</directory>
+                <directory>src/data</directory>
+                <directory>src/Console</directory>
+            </exclude>
+        </whitelist>
+    </filter>
 </phpunit>

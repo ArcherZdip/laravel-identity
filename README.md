@@ -1,4 +1,6 @@
 # Laravel-Chinese-IDNumber
+[![Build Status](https://travis-ci.org/ArcherZdip/laravel-identity.svg?branch=master)](https://travis-ci.org/ArcherZdip/laravel-identity)
+
 
 **生成和验证中国居民身份证号码**
 
