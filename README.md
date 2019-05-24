@@ -1,6 +1,8 @@
 # Laravel-Chinese-IDNumber
 [![Build Status](https://travis-ci.org/ArcherZdip/laravel-identity.svg?branch=master)](https://travis-ci.org/ArcherZdip/laravel-identity)
-
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ArcherZdip/laravel-identity/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ArcherZdip/laravel-identity/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/ArcherZdip/laravel-identity/badges/build.png?b=master)](https://scrutinizer-ci.com/g/ArcherZdip/laravel-identity/build-status/master)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/ArcherZdip/laravel-identity/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 
 **生成和验证中国居民身份证号码**
 
