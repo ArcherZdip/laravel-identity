@@ -1,4 +1,6 @@
 # Laravel-Chinese-IDNumber
+<a href="https://github.com/ArcherZdip/laravel-identity/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/ArcherZdip/laravel-identity.svg?color=green"></a>
+<a href="https://github.com/ArcherZdip/laravel-identity/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/ArcherZdip/laravel-identity.svg?color=green"></a>
 [![Build Status](https://travis-ci.org/ArcherZdip/laravel-identity.svg?branch=master)](https://travis-ci.org/ArcherZdip/laravel-identity)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ArcherZdip/laravel-identity/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ArcherZdip/laravel-identity/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/ArcherZdip/laravel-identity/badges/build.png?b=master)](https://scrutinizer-ci.com/g/ArcherZdip/laravel-identity/build-status/master)
